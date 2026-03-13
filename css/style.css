@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #e8f5ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a3d28;
+  padding: 2rem 1rem;
+}
+
+/* ── WIDGET ── */
+.widget {
+  width: 100%;
+  max-width: 45rem;
+  background: #ffffff;
+  border: 1px solid #b2d9c0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: #d4f0e0;
+  padding: 3rem 2rem 2.5rem;
+  text-align: center;
+  border-bottom: 1px solid #b2d9c0;
+}
+
+.masthead-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.masthead-icon img {
+  width: 88px;
+  height: 88px;
+}
+
+.masthead h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.06em;
+  line-height: 0.9;
+  color: #1a3d28;
+  margin-bottom: 1rem;
+}
+
+.masthead h1 span {
+  display: block;
+  color: #1e5c34;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #2a7a48;
+  letter-spacing: 0.04em;
+}
+
+/* ── MAIN CONTENT ── */
+.main-content {
+  padding: 2rem 2.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  background: #f4faf6;
+  border: 1px solid #b2d9c0;
+  border-radius: 4px;
+  color: #1a3d28;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  outline: none;
+}
+
+.text-input::placeholder {
+  color: #7aaa90;
+  font-style: italic;
+}
+
+.text-input:focus {
+  border-color: #1e5c34;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  background: #1e5c34;
+  border: 1px solid #1e5c34;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #27804a;
+  border-color: #27804a;
+}
+
+/* ── FEEDBACK ── */
+.feedback {
+  min-height: 1.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #e03f3f;
+  padding: 0.4rem 0 0.6rem;
+}
+
+/* ── SHOPPING LIST ── */
+.shopping-list {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+/* Added list items with border underneath */
+.shopping-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ceeada;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #1a3d28;
+}
+
+/* Bullet point before each added items */
+.shopping-list li::before {
+  content: '›';
+  color: #1e5c34;
+  font-size: 1.1rem;
+}
+
+/* ── FOOTER ── */
+.footer {
+  padding: 1.5rem 2.5rem;
+  border-top: 1px solid #b2d9c0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: #f4faf6;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #b2d9c0;
+  color: #1e5c34;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: #1e5c34;
+  color: #ffffff;
+  border-color: #1e5c34;
+}
+
+.social-link i {
+  font-size: 14px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 500px) {
+  .main-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .footer {
+    padding: 1.25rem;
+  }
+}
